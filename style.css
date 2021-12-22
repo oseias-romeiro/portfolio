@@ -1,0 +1,67 @@
+body {
+    background-image: url('images/capa.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: rgb(50, 51, 71);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.capa {
+    height: 768px;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+.content {
+    text-align: center;
+    padding-top: 200px;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 20px;
+}
+.nav-link {
+    background: none;
+    border: none;
+}
+
+/*telas muito grandes*/
+@media only screen and (max-width: 3000px) {
+    .carousel-inner {
+        max-width: 800px;
+        margin-left: 23%;
+    }
+}
+/*telas grandes*/
+@media only screen and (max-width: 1030px) {
+    .carousel-inner {
+        max-width: 768px;
+        margin-left: 9.5%;
+    }
+}
+/*tablet*/
+@media only screen and (max-width: 770px) {
+    .carousel-inner {
+        max-width: 760px;
+        margin-left: 0;
+    }
+}
+/*celular*/
+@media only screen and (max-width: 700px) {
+    .imgResponsive {
+        max-width: 350px;
+    }
+    .carousel-inner {
+        align-items: center;
+        max-width: 400px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .imgResponsive {
+        max-width: 300px;
+    }
+    .carousel-inner {
+        align-items: center;
+        max-width: 300px;
+        margin-left: 0;
+    }
+}

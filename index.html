@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oseias Romeiro</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+
+    <link rel="shortcut icon" href="images/profile.ico" type="image/x-icon">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <button id="btnMobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="/#oseias-romeiro">Oseias Romeiro</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="meLeva('sobre')">Sobre</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="meLeva('projetos')">Projetos</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="meLeva('contato')">Contato</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="capa">
+            <div class="content">
+                <h1>Olá, meu nome é Oseias :)</h1><br>
+                <h4>Sou estudante de Ciências da Computação e Desenvolvedor Web.</h4    >
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <br>
+            <h1 id="sobre">Sobre</h1>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="imgResponsive" src="images/working.jpg" alt="notebook" style="width: 700px; border-radius: 3%;">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h5>Sou estudante de Ciências da Computação na 
+                            <a href="http://www.unb.br/institucional/a-unb" target="_blank">UNB</a> 
+                            e estou cursando o <perido id="periodo"></perido>º periodo;
+                        </h5><br>
+                        <h5>
+                            Também sou Desenvolvedor, construo aplicações web como sites, extensões para navegadores, API's...  
+                        </h5><br>
+                        <h5>Costumo construir aplicações web utilizando Django, NodeJS ou PHP. E uso banco de dados tanto SQL como no SQL.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card projetos">
+            <br>
+            <h1 id="projetos">Projetos</h1>
+            <br>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img class="d-block w-100" src="images/project01.png" alt="First slide">
+                            <div class="visitProject"></div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="d-block w-100" src="images/orange.jpg" alt="Second slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="d-block w-100" src="images/purple.jpg" alt="Third slide">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="card contato">
+            <br>
+            <h1 id="contato">Contato</h1>
+            <br>
+            <div class="row align-items-center">
+                <div class="col">
+                    <p>
+                        <a href="https://www.linkedin.com/in/oseias-romeiro" style="color: green">
+                            <img src="images/linkedin.ico" alt="linkedin" style="width: 50px;">
+                            Linkedin
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.github.com/oseias-romeiro" style="color: green">
+                            <img src="images/github.svg" alt="github" style="width: 50px;">
+                            GitHub 
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:oseiasromeirom@gmail.com" style="color: green">
+                            <img src="images/gmail.ico" alt="email" style="width: 50px;">
+                            Email
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/__oseias/" style="color: green">
+                            <img src="images/instagram.png" alt="email" style="width: 50px;">
+                            Instagram
+                        </a>
+                    </p>
+                </div>
+                <div class="col">
+                    <img class="imgResponsive" src="images/contact.jpg" alt="celular" style="width: 700px; border-radius: 3%;">
+                </div>
+            </div>
+        </div>
+
+    </div><br><br><br>
+
+    <footer class="text-center text-white fixed-bottom" style="background-color: black;">
+        <div class="text-center p-3" style="background-color: black;">
+            © 2020 Copyright:
+            <a class="text-white" href="#">Oseias Romeiro</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
