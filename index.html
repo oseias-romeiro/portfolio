@@ -44,109 +44,111 @@
 
     <div class="container-fluid">
         <div class="capa">
-            <div class="content">
-                <h1>Olá, meu nome é Oseias!</h1><br>
+            <div class="content text-light">
+                <h1>Olá, meu nome é Oseias Romeiro!</h1><br>
                 <h4>Sou estudante de Ciências da Computação e Desenvolvedor ;)</h4>
             </div>
         </div>
         <br>
-        <div class="card">
-            <br>
-            <h2 id="sobre">Sobre</h2>
-            <br>
-            <div class="row align-items-center">
-                <div class="col">
-                    <img class="imgResponsive" src="images/working.jpg" alt="notebook" style="width: 700px; border-radius: 3%;">
+        <div class="container">
+            <div class="card">
+                <br>
+                <h2 id="sobre">Sobre</h2>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img class="imgResponsive" src="images/working.jpg" alt="notebook" style="width: 700px; border-radius: 3%;">
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <h5>
+                                Meu nome é Oseias Romeiro, estudo Ciências da Computação e estou cursando o <perido id="periodo"></perido>º periodo;
+                            </h5><br>
+                            <h5>
+                                Também sou Desenvolvedor e construo deiversas aplicações como sites, apps, extensões, API's...  
+                            </h5><br>
+                            <h5>Tenho dominio em linguagens de programação como Python, Javascript, Java, C, C++ e PHP. Costumo usar banco de dados SQL's e MongoDB</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h5>Meu nome é Oseias Romeiro, estudo Ciências da Computação na 
-                            <a href="http://www.unb.br/institucional/a-unb" target="_blank">UNB</a> 
-                            e estou cursando o <perido id="periodo"></perido>º periodo;
-                        </h5><br>
-                        <h5>
-                            Também sou Desenvolvedor, construo deiversas aplicações como sites, apps, extensões, API's...  
-                        </h5><br>
-                        <h5>Tenho dominio em linguagens de programação como Python, Javascript, Java, C, C++ e PHP. Costumo usar banco de dados SQL's e o mongoDB</h5>
+            </div>
+            <br>
+            <div class="card projetos">
+                <br>
+                <h2 id="projetos">Projetos</h2>
+                <br>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://api-exemple.herokuapp.com/" target="__blank">
+                                <img class="d-block w-100" src="images/project01.png" alt="API exemplo">
+                                <div class="visitProject"></div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="http://relcalculator.freevar.com/" target="__blank">
+                                <img class="d-block w-100" src="images/project02.png" alt="RelCalculator">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="http://shirtstore.freevar.com/" target="__blank">
+                                <img class="d-block w-100" src="images/project03.png" alt="ShirtStore">
+                            </a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="card contato">
+                <br>
+                <h2 id="contato">Contato</h2>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p>
+                            <a href="https://www.linkedin.com/in/oseias-romeiro" style="color: green">
+                                <img src="images/linkedin.ico" alt="linkedin" style="width: 50px;">
+                                Linkedin
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.github.com/oseias-romeiro" style="color: green">
+                                <img src="images/github.svg" alt="github" style="width: 50px; background-color: black; border-radius: 100%;">
+                                GitHub 
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:oseiasromeirom@gmail.com" style="color: green">
+                                <img src="images/gmail.ico" alt="email" style="width: 50px;">
+                                Email
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/__oseias/" style="color: green">
+                                <img src="images/instagram.png" alt="email" style="width: 50px;">
+                                Instagram
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img class="imgResponsive" src="images/contact.jpg" alt="celular" style="width: 700px; border-radius: 3%;">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <div class="card projetos">
-            <br>
-            <h2 id="projetos">Projetos</h2>
-            <br>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://api-exemple.herokuapp.com/" target="__blank">
-                            <img class="d-block w-100" src="images/project01.png" alt="API exemplo">
-                            <div class="visitProject"></div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="http://relcalculator.freevar.com/" target="__blank">
-                            <img class="d-block w-100" src="images/project02.png" alt="RelCalculator">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="http://shirtstore.freevar.com/" target="__blank">
-                            <img class="d-block w-100" src="images/project03.png" alt="ShirtStore">
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <br>
-        <div class="card contato">
-            <br>
-            <h2 id="contato">Contato</h2>
-            <br>
-            <div class="row align-items-center">
-                <div class="col">
-                    <p>
-                        <a href="https://www.linkedin.com/in/oseias-romeiro" style="color: green">
-                            <img src="images/linkedin.ico" alt="linkedin" style="width: 50px;">
-                            Linkedin
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.github.com/oseias-romeiro" style="color: green">
-                            <img src="images/github.svg" alt="github" style="width: 50px;">
-                            GitHub 
-                        </a>
-                    </p>
-                    <p>
-                        <a href="mailto:oseiasromeirom@gmail.com" style="color: green">
-                            <img src="images/gmail.ico" alt="email" style="width: 50px;">
-                            Email
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.instagram.com/__oseias/" style="color: green">
-                            <img src="images/instagram.png" alt="email" style="width: 50px;">
-                            Instagram
-                        </a>
-                    </p>
-                </div>
-                <div class="col">
-                    <img class="imgResponsive" src="images/contact.jpg" alt="celular" style="width: 700px; border-radius: 3%;">
-                </div>
-            </div>
-        </div>
+        
 
     </div><br><br><br>
 
-    <footer class="text-center text-white fixed-bottom" style="background-color: black;">
+    <footer class="text-center text-white" style="background-color: black;">
         <div class="text-center p-3" style="background-color: black;">
             © 2020 Copyright:
             <a class="text-white" href="#">Oseias Romeiro</a>
