@@ -16,9 +16,11 @@
     <!-- REACT PRODUCTION -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <!--
+    
+    <!-- REACT DEV 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>-->
+
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- CSS -->
@@ -214,46 +216,6 @@
 
     <!-- REACT -->
     <script src="react.js" type="text/babel"></script>
-    
-    <!--
-    <script type="text/babel">
-        const { useState } = React
-
-        let spaceLeft = 500;
-        if(screen.width < 900 ){
-            spaceLeft = 0;
-        }
-
-        const Arrow = ()=>{
-            const [pos, setPos] = useState(200);
-            setTimeout(()=>{
-                if(pos <= 0){
-                    setPos(() => 200);
-                }else {
-                    setPos(() => pos-10);
-                }
-            }, 100)
-
-            return (
-                <div className="row" style={{marginLeft: spaceLeft, textalign: "center"}}>
-                    <div className="col">
-                        <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos+100}}/>
-                        <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos}}/>
-                    </div>
-                    <div className="col">
-                        <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos}}/>
-                        <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos+50}}/>
-                    </div>
-                    <div className="col">
-                        <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos}}/>
-                        <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos+100}}/>
-                    </div>
-                </div>
-            )
-        }
-        const arrows = ReactDOM.createRoot(document.getElementById("arrows"));
-        arrows.render(<Arrow />);-->
-    </script>
 
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

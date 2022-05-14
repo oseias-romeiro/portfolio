@@ -1,6 +1,6 @@
 const { useState } = React
 
-let spaceLeft = 500;
+let spaceLeft = 550;
 if(screen.width < 900 ){
     spaceLeft = 0;
 }
@@ -16,7 +16,7 @@ const Arrow = ()=>{
     }, 100)
 
     return (
-        <div className="row" style={{marginLeft: spaceLeft, textalign: "center"}}>
+        <div className="row" style={{marginLeft: spaceLeft, textAlign: "center"}}>
             <div className="col">
                 <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos+100}}/>
                 <img src="images/arrow-up.png" height="50" alt="arrow-up" style={{marginTop: pos}}/>
