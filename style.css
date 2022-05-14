@@ -35,6 +35,12 @@ body {
     border: solid white 1px;
 }
 
+.panel {
+    background-color: rgba(0, 0, 0, 0.664);
+    text-align: center;
+    padding: 10%;
+}
+
 /*telas muito grandes*/
 @media only screen and (max-width: 3000px) {
     #carouselExampleControls {

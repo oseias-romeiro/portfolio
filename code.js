@@ -29,8 +29,6 @@ meLeva = (onde) => {
     btnsMenus[3].style = "";
     btnsLink[1].style = "";
 
-
-
     // scroll
     if(onde == "sobre"){
         btnsMenus[1].className = "nav-link active";
