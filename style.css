@@ -3,14 +3,16 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-color: white;
+    background-size: 100%;
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
+
 .capa {
-    height: 768px;
-    background-color: rgba(1, 39, 255, 0.438);
-    margin-left: -20px;
-    margin-right: -10px;
+    height: 115vh;
+}
+.card {
+    height: 100vh;
 }
 .content {
     text-align: center;
@@ -39,6 +41,11 @@ body {
     background-color: rgba(0, 0, 0, 0.664);
     text-align: center;
     padding: 10%;
+    height: 80vh;
+}
+
+a {
+    color: black;
 }
 
 /*telas muito grandes*/

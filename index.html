@@ -20,7 +20,7 @@
     <!-- JS -->
     <script src="code.js"></script>
     <!-- ICON -->
-    <link rel="shortcut icon" href="images/profile.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
 
 </head>
 <body>
@@ -29,28 +29,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Oseias Romeiro</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" onclick="meLeva('home')" href="#" style="text-decoration: underline;">Home</a>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" onclick="meLeva('sobre')">Sobre</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" onclick="meLeva('projetos')">Projetos</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" onclick="meLeva('contato')">Contato</button>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./curriculo-Oseias_Romeiro.pdf">Curriculo</a>
-                </li>
-            </ul>
+            <div class="row justify-content-between" style="width: 100%;">
+                <div class="col-10">
+                    <a class="navbar-brand" href="#">Oseias Romeiro</a>
+                </div>
+                <div class="col-1">
+                    <a href="https://oseias--romeiro-github-io.translate.goog/portfolio/?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=pt-BR&_x_tr_pto=wapp">
+                        <button id="translateButton" class="btn bg-dark">Translate</button>
+                    </a>
+                </div>
+            </div>
             
-            <a href="https://oseias--romeiro-github-io.translate.goog/portfolio/?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=pt-BR&_x_tr_pto=wapp">
-                <button id="translateButton" class="btn bg-dark">Translate</button>
-            </a>
+            
             
         </div>
     </nav>
@@ -58,35 +48,18 @@
     <div class="container-fluid">
         <div class="capa">
             <div class="content text-light">
-                <h1>Olá, meu nome é Oseias Romeiro!</h1><br>
-                <h4>Sou estudante de Ciências da Computação e Desenvolvedor ;)</h4>
-                <div id="arrows" style="position: absolute"></div>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="card">
-                <br>
-                <h2 id="sobre">Sobre</h2>
-                <br>
-                <div style="background-image: url('images/working.jpg'); border-radius: 3%;">
-                    <div class="panel">
-                        <div class="card-body text-light">
-                            <h5>
-                                Meu nome é Oseias Romeiro, sou de <a href="#" data-toggle="modal" data-target="#exampleModal">Brasilia-DF</a>. <br> Estudo Ciências da Computação na UNB e estou cursando o <perido id="periodo"></perido>º periodo;
-                            </h5><br>
-                            <h5>
-                                Também sou Desenvolvedor e construo deiversas aplicações como sites, apps, extensões, API's...  
-                            </h5><br>
-                            <h5>Tenho dominio em linguagens de programação como Python, Javascript, Java, PHP, C... E também em servidores de cache, search engine, email... Costumo usar banco de dados SQL ou MongoDB. Saiba mais em <a href="./curriculo-Oseias_Romeiro.pdf">Curriculo</a>!</h5>
-                        </div>
-                    </div>
+                <h1>Olá, meu nome é <u>Oseias Romeiro</u>!</h1><br>
+                <h4>Estudante de Ciências da Computação</h4>
+                <div class="card-body text-dark">
+                    <h5>Meu nome é Oseias Romeiro, sou de <a href="#" data-toggle="modal" data-target="#exampleModal">Brasilia (Brasil)</a>. <br> Estudo Ciências da Computação na UNB e estou cursando o <perido id="periodo"></perido>º periodo;</h5>
+                    <br>
+                    <h5>Tenho dominio em linguagens de programação como Python, Javascript, Java, PHP, C... <br>E também em construção de aplicações com servidores de cache, search engine, email, banco de dados... <br>Saiba mais em <a href="./curriculo-Oseias_Romeiro.pdf">Curriculo</a>!</h5>
                 </div>
             </div>
-            <br>
+        </div>
+        
+        <div class="container-xl">
             <div class="card projetos">
-                <br>
-                <h2 id="projetos">Projetos</h2>
                 <br>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -138,47 +111,6 @@
                 </div>
             </div>
             <br>
-            <div class="card contato">
-                <br>
-                <h2 id="contato">Contato</h2>
-                <br>
-                <div style="background-image: url('images/contact.jpg');">
-                    <div class="panel">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <p>
-                                    <a href="https://www.linkedin.com/in/oseias-romeiro" style="color: white">
-                                        <img src="images/linkedin.ico" alt="linkedin" style="width: 50px;">
-                                        Linkedin
-                                    </a>
-                                </p>
-                                <br>
-                                <p>
-                                    <a href="https://www.github.com/oseias-romeiro" style="color: white">
-                                        <img src="images/github.svg" alt="github" style="width: 50px; background-color: black; border-radius: 100%;">
-                                        GitHub 
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="col">
-                                <p>
-                                    <a href="mailto:oseiasromeirom@gmail.com" style="color: white">
-                                        <img src="images/gmail.ico" alt="email" style="width: 50px;">
-                                        Email
-                                    </a>
-                                </p>
-                                <br>
-                                <p>
-                                    <a href="https://www.instagram.com/__oseias/" style="color: white">
-                                        <img src="images/instagram.png" alt="email" style="width: 50px;">
-                                        Instagram
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div><br><br><br>
 
@@ -200,6 +132,27 @@
     </div>
 
     <footer class="text-center text-white" style="background-color: black;">
+
+        <br>
+        <section class="mb-4">
+            <a href="https://www.linkedin.com/in/oseias-romeiro" style="color: white; margin: 10px;">
+                <img src="images/linkedin.ico" alt="linkedin" style="width: 30px;">
+                Linkedin
+            </a>
+            <a href="https://www.github.com/oseias-romeiro" style="color: white; margin: 10px;">
+                <img src="images/github.svg" alt="github" style="width: 30px; background-color: black; border-radius: 100%;">
+                GitHub 
+            </a>
+            <a href="mailto:oseiasromeirom@gmail.com" style="color: white; margin: 10px;">
+                <img src="images/gmail.ico" alt="email" style="width: 30px;">
+                Email
+            </a>
+            <a href="https://www.instagram.com/__oseias/" style="color: white; margin: 10px;">
+                <img src="images/instagram.png" alt="email" style="width: 30px;">
+                Instagram
+            </a>
+          </section>
+
         <div class="text-center p-3" style="background-color: black;">
             © 2022 Copyright:
             <a class="text-white" href="mailto:oseiasromeirom@gmail.com">Oseias Romeiro</a>
